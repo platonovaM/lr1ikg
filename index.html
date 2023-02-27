@@ -1,0 +1,84 @@
+<html>
+<head>
+ <title> Lab1 X3DOM </title>
+ <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'>
+</script>
+<script src="https://www.x3dom.org/download/dev/x3dom-full.js"></script>
+ <link rel='stylesheet' type='text/css'
+href='https://www.x3dom.org/download/x3dom.css'>
+ <style>
+ x3d {
+ border: 1px solid rgb(229, 215, 235);
+ border-radius: 30px;
+ background-image: url('bkg.jpg');
+ background-position: center;
+   background-size: cover;
+
+ }
+ body {
+ font-size: 100%;
+ font-family: verdana, sans-serif;
+ background: rgb(194, 164, 252);
+ color: black;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ }
+ h1
+ {color: black;
+ }
+ </style>
+</head>
+<body>
+<h1> Лабораторная работа №1 </h1>
+<h3> Вариант 8 </h3>
+<h3>Платонова М.В.</h3>
+<x3d  width='1000px' height='600px' >
+ <scene>
+ <transform translation='0 0 0'>
+    <shape>
+    <appearance>
+    <material diffuseColor='0 0 9'></material>
+    </appearance>
+    <text string="TEXT"></text>
+    <fontstyle family="Lucida San"></fontstyle>
+    </shape>
+ </transform >
+ <transform translation='4 1.5 0'>
+    <shape>
+    <appearance>
+    <material diffuseColor='1 0 9'></material>
+    </appearance>
+    <sphere radius="1.2"/>
+    </shape>
+ </transform>
+ <transform translation='-2 1.5 0'>
+    <shape>
+    <appearance>
+    <material diffuseColor='2 1 9'></material>
+    </appearance>
+    <torus />
+    </shape>
+</transform>
+<transform translation='1.2 2.8 0'>
+   <shape>
+   <appearance>
+      <PixelTexture image='2 2 4 0xff000033 0x00ff00ff 0x0000ffff 0xffff00ff'>
+      </PixelTexture>
+   </appearance>
+   <snout height="1.6"/>
+   </shape>
+</transform>
+<transform translation='1.2 -2 0'>
+   <shape>
+   <appearance>
+      <PixelTexture image='2 2 4 0xff000033 0x00ff00ff 0x0000ffff 0xffff00ff'></PixelTexture>
+   </appearance>
+   <pyramid height="2" xbottom="3" ybottom="2" xtop="0" ytop="0" xoff="1" yoff="0.5"/>
+   </shape>
+</transform>
+ </scene>
+</x3d>
+</body>
+</html>
+
